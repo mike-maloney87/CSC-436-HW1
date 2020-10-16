@@ -1,0 +1,38 @@
+<form>
+  <label for = "y">Origin</label>
+  <select>
+    <option value = "ORD">O'Hare</option>
+    <option value = "LGA">LaGuardia</option>
+    <option value = "JFK">JFK</option>
+    <option value = "LAX">LAX</option>
+  </select>
+
+  <br>
+  <label for = "T">Destination</label>
+  <select>
+    <option value = "ORD">O'Hare</option>
+    <option value = "LGA">LaGuardia</option>
+    <option value = "JFK">JFK</option>
+    <option value = "LAX">LAX</option>
+  </select>
+
+  <br>
+  <label for ="Travel Date">Travel Date</label>
+  <input type = "date">
+
+  <br>
+  <p>Number of Travelers:</p>
+
+  <div class = "form-group">
+    <div class = "col">
+      <input class = "form-control" id = Travelers type="number" [(ngModel)] = travelers name = "Travelers">
+    </div>
+  </div>
+
+  <br>
+
+  <input type="submit" (click) = "price()">
+</form>
+<br><br>
+<p>{{message}}{{result}}</p>
+
